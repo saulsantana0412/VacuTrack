@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+
+     
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>VacuTrack</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../Recursos/iconoVacuna.svg" alt="">
+            </div>
+
+            <span class="logo_name">VacuTrack</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#" onclick="inicio()">
+                    <i class="uil uil-estate""></i>
+                    <span class="link-name"">Inicio</span>
+                </a></li>
+                <li><a href="#" onclick="registroPaciente()">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name" >Ingresar Paciente</span>
+                </a></li>
+                <li><a href="#" onclick="registroVacuna()">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Ingresar Vacuna</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Imprimir</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="../Principal/Principal.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Salir</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Modo Oscuro</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Buscar Pacientes">
+            </div>
+            
+            <img src="images/profile.jpg" alt="">
+        </div>
+
+        <div class="dash-content" id="contenido" >
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Actividades para hoy</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-thumbs-up"></i>
+                        <span class="text">Pacientes para hoy</span>
+                        <span class="number">7</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Pacientes</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Nombre</span>
+                        <span class="data-list">Dilon</span>
+                        <span class="data-list">Deepa Chand</span>
+                        <span class="data-list">Manisha Chand</span>
+                        <span class="data-list">Pratima Shahi</span>
+                        <span class="data-list">Man Shahi</span>
+                        <span class="data-list">Ganesh Chand</span>
+                        <span class="data-list">Bikash Chand</span>
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Email</span>
+                        <span class="data-list">dilonbaby30@gmail.com</span>
+                        <span class="data-list">deepachand@gmail.com</span>
+                        <span class="data-list">prakashhai@gmail.com</span>
+                        <span class="data-list">manishachand@gmail.com</span>
+                        <span class="data-list">pratimashhai@gmail.com</span>
+                        <span class="data-list">manshahi@gmail.com</span>
+                        <span class="data-list">ganeshchand@gmail.com</span>
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Fecha</span>
+                        <span class="data-list">2023-12-12</span>
+                        <span class="data-list">2023-12-12</span>
+                        <span class="data-list">2023-12-13</span>
+                        <span class="data-list">2023-12-6</span>
+                        <span class="data-list">2023-12-6</span>
+                        <span class="data-list">2023-12-5</span>
+                        <span class="data-list">2023-12-5</span>
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Tipo</span>
+                        <span class="data-list">Salud Mental</span>
+                        <span class="data-list">Seguimiento</span>
+                        <span class="data-list">Pediatrica</span>
+                        <span class="data-list">General</span>
+                        <span class="data-list">General</span>
+                        <span class="data-list">Vacunacion</span>
+                        <span class="data-list">Vacunacion</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Estatus</span>
+                        <span class="data-list">Pendiente</span>
+                        <span class="data-list">Pendiente</span>
+                        <span class="data-list">Pendiente</span>
+                        <span class="data-list">Resibido</span>
+                        <span class="data-list">Recibido</span>
+                        <span class="data-list">Recibido</span>
+                        <span class="data-list">Recibido</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="registro" id="registroPaciente" style="display: none;" >
+                <div class="container paciente" >
+                    <header>Ingresar nuevo Paciente</header>
+            
+                    <form action="#" id="patientForm">
+                        <div class="form first">
+                            <div class="details personal">
+                                <span class="title">Datos Personales</span>
+            
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Nombre Completo</label>
+                                        <input type="text" placeholder="Nombre" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Fecha de Nacimiento</label>
+                                        <input type="date" placeholder="Fecha de Nacimiento" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Email</label>
+                                        <input type="text" placeholder="Email" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Numero de Telefono</label>
+                                        <input type="number" placeholder="Numero de telefono" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Genero</label>
+                                        <select required>
+                                            <option disabled selected>Selecciona un Genero</option>
+                                            <option>Masculino</option>
+                                            <option>Femenino</option>
+                                            <option>Otro</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Dirreccion</label>
+                                        <input type="text" placeholder="Dirreccion" required>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="details ID">
+                                <span class="title">Datos Medicos</span>
+            
+                                
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Condiciones Médicas Preexistentes</label>
+                                        <input type="text" placeholder="Ingrese sus condiciones medicas" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Que seguro medico Posee</label>
+                                        <select required>
+                                            <option disabled selected>Seleccione su aseguradora</option>
+                                            <option>Mapfre salud</option>
+                                            <option>ARS Futuro </option>
+                                            <option>Humano Seguros</option>
+                                            <option>BMI </option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Numero de afiliado(NO.Seguro)</label>
+                                        <input type="text" placeholder="Numero de seguro" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Nombre del Doctor</label>
+                                        <input type="text" placeholder=" " required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Fecha de la consulta</label>
+                                        <input type="date" placeholder="Enter your issued date" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                    </div>
+            
+                                    <button class="sumbit">
+                                        <span class="btnText">Enviar</span>
+                                        <i class="uil uil-navigator"></i>
+                                    </button>
+                            </div> 
+                        </div>
+            
+                    </form>
+                </div>
+        </div>
+        </div>
+
+        <div class="registroVacuna" id="registroVacuna" style="display: none;" >
+            <div class="container vacuna">
+                <header>Ingresar nueva Vacuna</header>
+        
+                <form action="#" >
+                    <div class="form first">
+                        <div class="details personal">
+                            <span class="title">Datos </span>
+        
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Nombre de la Vacuna​</label>
+                                    <input type="text" placeholder="Nombre" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Laboratorio o Fabricante​</label>
+                                    <input type="text" placeholder="Nombre del Laboratori​" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Fecha de Aprobación​</label>
+                                    <input type="date" placeholder="Fecha de Aprobado" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Descripción de la Vacuna​</label>
+                                    <input type="text" placeholder=" " required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Efectos Secundarios Conocidos</label>
+                                    <input type="text" placeholder=" " required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Precauciones​</label>
+                                    <input type="text" placeholder="Dirreccion" required>
+                                </div>
+                            </div>
+                        </div>
+        
+                                <button class="sumbit">
+                                    <span class="btnText">Enviar</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button>
+                        </div> 
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

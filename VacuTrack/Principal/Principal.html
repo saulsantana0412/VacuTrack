@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VacuTrack</title>
+    <link rel="stylesheet" href="styles/Principal.css">
+</head>
+<body>
+       
+        <header class="Inicio">
+            <div class="inicio-titulo">
+            <h1 class="titulo">VacuTrack</h1>
+            <p class="descripcion">Tu salud en tus manos. Mantén un registro completo de tus vacunas y mantente al día con las nuevas, todo en un solo lugar.</p>
+            </div>
+            <div>
+            <button class="inicio-boton">
+                Inicia ahora!
+            </button>
+            </div>
+        </header>
+
+        <div class="Botones_Sesion">
+            <button class="Registrate" onclick="registro()">Registrate Aqui!</button>
+            <button class="inicia-sesion" onclick="Login()">Inicia Sesion</button>
+        </div>
+
+        <main class="Contenido">
+            <section class="Descripcion">
+                <h2>¿Qué somos?</h2>
+                <p><b>VacuTrack</b> es una plataforma integral de seguimiento de vacunas diseñada para ayudarte a mantener un registro completo de tus vacunas y mantenerte al día con las nuevas. Con <b>VacuTrack</b>, tu salud está en tus manos.</p>
+            </section>
+
+            <section class="MVV">
+                <div class="Mision">
+                    <h2>Misión</h2>
+                    <p>Nuestra misión es proporcionar una plataforma fácil de usar y accesible que permita a los usuarios y a los profesionales de la salud rastrear y gestionar la información de vacunación. Nos esforzamos por mejorar la conciencia sobre la importancia de las vacunas y fomentar una mayor tasa de vacunación.</p>
+                </div>
+
+                <div class="Vision">
+                    <h2>Visión</h2>
+                    <p>Nuestra visión es ser el líder mundial en el seguimiento de vacunas, proporcionando a los usuarios la información más precisa y actualizada sobre su estado de vacunación. Aspiramos a ser una herramienta esencial para la salud pública, ayudando a prevenir enfermedades y promoviendo una vida más saludable para todos.</p>
+                </div>
+
+                <div class="Valores">
+                    <h2>Valores</h2>
+                    <ul>
+                        <li>Integridad</li>
+                        <li>Colaboracion</li>
+                        <li>Responsabilidad</li>
+                        <li>Precision</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="servicios">
+                <h2>Servicios</h2>
+                <div class="contenedores">
+                    <div class="contenedor_servicio">
+                        <div class="imagen">
+                            <img src="../Recursos/iconoVacuna.svg" alt="Descripción de la imagen">
+                        </div>
+                        <div class="texto">
+                            <h3>Seguimiento de Vacunas</h3>
+                            <p>Mantén un registro completo de todas las vacunas que has recibido a lo largo de tu vida.</p>
+                        </div>
+                        <div class="boton">
+                            <button class="login-button" onclick="Login()">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="login-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                                  </svg>
+                                </button>
+                        </div>
+                    </div>
+                    
+                    <div class="contenedor_servicio">
+                        <div class="imagen">
+                            <img src="../Recursos/iconoVacuna.svg" alt="Descripción de la imagen">
+                        </div>
+                        <div class="texto">
+                            <h3>Vacunas Pendientes</h3>
+                            <p>Descubre qué vacunas necesitas y cuándo debes recibirlas.</p>
+                        </div>
+                        <div class="boton">
+                            <button class="login-button" onclick="Login()">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="login-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                                  </svg>
+                                </button>
+                        </div>
+                    </div>
+
+                    <div class="contenedor_servicio">
+                        <div class="imagen">
+                            <img src="../Recursos/iconoVacuna.svg" alt="vacuna">
+                        </div>
+                        <div class="texto">
+                            <h3>Actualizaciones de Vacunas</h3>
+                            <p>Recibe notificaciones sobre nuevas vacunas tan pronto como estén disponibles.</p>                
+                            </div>
+                        <div class="boton">
+                            <button class="login-button" onclick="Login()">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="login-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                                  </svg>
+                                  
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <script src="scripts/Principal.js"></script>
+</body>
+</html>

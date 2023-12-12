@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+     
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title> Paciente Form </title> 
+</head>
+<body>
+       <div class="container">
+        <header>Registro Doctor</header>
+
+        <form onsubmit="registrar()" action="../Principal/Principal.html">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Datos Personales</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nombre Completo</label>
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Fecha de Nacimiento</label>
+                            <input type="date" placeholder="Fecha de Nacimiento" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Numero de Telefono</label>
+                            <input type="number" placeholder="Numero de telefono" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nombre de la Clínica u Hospital</label>
+                            <input type="text" placeholder="Nombre de la Clínica" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Dirección de la clínica u hospital</label>
+                            <input type="text" placeholder="Dirreccion" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Número de licencia médica.​</label>
+                            <input type="text" placeholder="Numero Licencia" required>
+                        </div>
+
+                        <button class="sumbit">
+                            <span class="btnText">Enviar</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                       </div> 
+
+                    </div>
+                </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

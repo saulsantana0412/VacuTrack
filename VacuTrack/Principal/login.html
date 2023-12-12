@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../Principal/styles/Login.css">
+    <title>VacuTrack</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="../Interfaz Doctor/index.html">
+                <p class="accede_como">Accede como <b>Doctor</b></p>
+                <input type="text" placeholder="Cedula/Pasaporte">
+                <input type="password" placeholder="Contraseña">
+                <a href="#">Olvidaste tu contraseña?</a>
+                <a href="../Registros/index.html">Registrate Aqui!</a>
+                <button>Acceder</button>
+            </form> 
+        </div>
+        <div class="form-container sign-in">
+                <form action="../Interfaz Paciente/index.html">
+                <p class="accede_como">Accede como <b>Paciente</b></p>
+
+                <input type="text" placeholder="Cedula/Pasaporte">
+                <input type="password" placeholder="Contraseña">
+                <a href="#">Olvidaste tu contraseña?</a>
+                <button>Acceder</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Eres un Paciente?</h1>
+                    <p>Haz click al boton de aqui abajo para acceder como uno</p>
+                    <button class="hidden" id="login">Soy Paciente</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Eres un Doctor?</h1>
+                    <p>Haz click al boton de aqui abajo para acceder como uno</p>
+                    <button class="hidden" id="register">Soy Doctor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>

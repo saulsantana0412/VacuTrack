@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>VacuTrack</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button onclick="principal()">
+	<i class="fa-solid fa-house"></i>
+</button>
+
+<div class="contenedor-principal">
+
+	<div class="contenedor-vacunasRecibidas">
+		<h1>Vacunas Recibidas</h1>
+		<div class="tabla">
+		<table class="VacunasPuestas">
+			<thead>
+			<tr>
+			<th>Vacuna</th>
+			<th>Fecha Vacunacion</th>
+			<th>Dosis</th>
+			<th>Lote</th>
+			<th>Lugar Vacunacion</th>
+			</tr>
+			</thead>
+			
+			<tbody>
+			<tr>
+				<tr><td>Hepatitis B</td><td>2018-01-15</td><td>Primera dosis</td><td>12345</td><td>Centro de Salud A</td></tr>
+				<tr><td>Hepatitis B</td><td>2018-02-05</td><td>Segunda dosis</td><td>12346</td><td>Centro de Salud A</td></tr>
+				<tr><td>Hepatitis B</td><td>2018-03-20</td><td>Tercera dosis</td><td>67890</td><td>Centro de Salud B</td></tr>
+				<tr><td>Tétanos</td><td>2019-04-10</td><td>Dosis única</td><td>67891</td><td>Centro de Salud B</td></tr>
+				<tr><td>Varicela</td><td>2019-05-01</td><td>Primera dosis</td><td>11121</td><td>Centro de Salud C</td></tr>
+				<tr><td>Varicela</td><td>2019-06-15</td><td>Segunda dosis</td><td>22232</td><td>Centro de Salud D</td></tr>
+				<tr><td>Influenza</td><td>2021-08-22</td><td>Dosis anual</td><td>33345</td><td>Centro de Salud E</td></tr>
+				<tr><td>COVID-19 (Pfizer-BioNTech)</td><td>2022-09-12</td><td>Primera dosis</td><td>44456</td><td>Centro de Salud F</td></tr>
+			</tbody>
+			</tr>
+		</table>
+	</div>
+	</div>
+
+	<div class="contenedor-vacunasRestantes">
+		<h1>Vacunas Restantes</h1>
+		<table class="VacunasFaltantes">
+			<thead>
+			<tr>
+			<th>Vacuna</th>
+			<th>Dosis Restantes</th>
+			<th>Fecha de proxima dosis</th>
+			<th>lugar de vacunacion</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr><td>Hepatitis B</td><td>1</td><td>2024-01-15</td><td>Centro de Salud A</td></tr>
+				<tr><td>Varicela</td><td>1</td><td>2024-02-20</td><td>Centro de Salud B</td></tr>
+				<tr><td>Sarampión, Paperas, Rubéola (MMR)</td><td>1</td><td>2024-03-30</td><td>Centro de Salud C</td></tr>
+				<tr><td>Influenza</td><td>1</td><td>2024-10-01</td><td>Centro de Salud D</td></tr>
+			</tbody>
+			</table>
+	</div>
+
+
+</div>	
+
+
+	<h1>Nuevas Vacunas</h1>
+
+<div class="container-card">
+	
+<div class="card">
+	<figure>
+		<img src="https://www.paho.org/sites/default/files/styles/max_1500x1500/public/2021-01/covid-19-vaccination-1500-991-2.jpg?itok=p2GRV4je">
+	</figure>
+	<div class="contenido-card">
+		<h3>Vacuna ARNm contra el COVID de 2023</h3>
+		<p>Esta es la última vacuna contra el COVID-19 desarrollada por Pfizer-BioNTech y Moderna. A diferencia de las primeras vacunas, esta solo requiere un solo pinchazo. Fue aprobada en septiembre de 2023 por la FDA y las autoridades de la Unión Europea.</p>
+		<a onclick="Quiero('Vacuna ARNm contra el COVID de 2023')">¡Quiero vacunarme!</a>
+	</div>
+</div>
+<div class="card">
+	<figure>
+		<img src="https://static.wixstatic.com/media/fd07e4_a60a174070934a7f9ca0f0b7545fe173~mv2.jpg/v1/fill/w_640,h_426,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/fd07e4_a60a174070934a7f9ca0f0b7545fe173~mv2.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Vacuna del Virus de Papiloma Humano (VPH) universal</h3>
+		<p>Esta vacuna se ha ampliado para incluir a los varones. Se administra a los 12 años de edad, tanto a niñas como niños, y la pauta de vacunación es de dos dosis que se administran con un intervalo mínimo de seis meses.</p>
+		<a onclick="Quiero('Vacuna del Virus de Papiloma Humano (VPH) universal')">¡Quiero vacunarme!</a>
+	</div>
+</div>
+<div class="card">
+	<figure>
+		<img src="https://cnnespanol.cnn.com/wp-content/uploads/2022/06/220622154812-meningococcal-vaccine-file-full-169.jpg?quality=100&strip=info">
+	</figure>
+	<div class="contenido-card">
+		<h3>Vacuna contra la Meningitis B para lactantes</h3>
+		<p>Esta vacuna se incorporará antes de final de 2024 y se administrará a los 2, 4 y 12 meses de edad.</p>
+		<a onclick="Quiero('Vacuna contra la Meningitis B para lactantes')">¡Quiero vacunarme!</a>
+	</div>
+</div>
+</div>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/c7150968fd.js" crossorigin="anonymous"></script>
+</body>
+</html>
